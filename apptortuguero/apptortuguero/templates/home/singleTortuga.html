@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}{{local.nombre}}{% endblock %}
+
+{% block content %}
+    <div id="contenedor">
+
+        <div id="tortugasola">
+            <p><h2>{{local.nombre}}</h2></p>
+            <p><h3>{{local.especie}}</h3></p>
+
+            <img src='{{ MEDIA_URL }}{{ local.imagen }}' width="120px"/>
+            <ul>
+                <li>Sexo: {{local.sexo}}</li>
+                <li>Responsable: {{local.responsable}}</li>
+                <li>Fecha: {{local.tiempo_reg}}</li>
+                <li>Sitio de Monitoreo: {{local.sitioMonitoreo}}</li>
+                <li>Localización: {{local.localizacion}}</li>
+                <li>Longitud: {{local.longitud}}</li>
+                <li>Latitud: {{local.latitud}}</li>
+                <li>Marea: {{local.marea}}</li>
+                <li>Metodo: {{local.metodo}}</li>
+                <li>Placas: {{local.placas}}</li>
+                <li>Izquierda Nueva: {{local.izqnueva}}</li>
+                <li>Derecha Nueva: {{local.dervieja}}</li>
+                <li>Izquierda Vieja: {{local.izqvieja}}</li>
+                <li>Derecha Vieja: {{local.region}}</li>
+                <li>Largo Recto Caparazón: {{local.LRC}}</li>
+                <li>Largo Curvo del Caparazón: {{local.LCC}}</li>
+                <li>Ancho Recto Caparazón: {{local.ARC}}</li>
+                <li>Ancho Curvo del Caparazón: {{local.ACC}}</li>
+                <li>Longitud del Pastrón: {{local.LP}}</li>
+                <li>Longitud Total de la Cola: {{local.LTC}}</li>
+                <li>Profundidad del Cuerpo: {{local.PC}}</li>
+                <li>Peso: {{local.peso}}</li>
+            </ul>
+        </div>
+
+
+        <div id="informacion">
+            <p>{{local.informacion}}</p>
+        </div>
+
+    </div>
+{% endblock %}

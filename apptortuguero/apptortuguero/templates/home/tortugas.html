@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Tortugas {% endblock %}
+
+{% block content %}
+<!-- Conexion -->
+    {% if tortugas %}
+        {% for p in tortugas %}
+            <div id="contenedorindex">
+                <h1>{{ p.nombre }}</h1>
+                <h3>{{ p.sexo }}, {{ p.especie }}</h3>
+                <div id="lugaruno"><a id="perfilportada" href="/tortuga/{{ p.id }}"><img src='{{ MEDIA_URL }}{{ p.imagen }}' width="120px"/></a></div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h2>No Hay Tortugas Agregadas</h2>
+    {% endif %}
+{% endblock %}

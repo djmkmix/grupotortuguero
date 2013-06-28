@@ -1,0 +1,53 @@
+
+
+body, html
+{
+	color: #EEE;
+	font-family: Arial;
+	font-size: 16px;
+	text-align: center;
+	overflow: scroll hidden;
+    overflow-x: hidden;
+}
+
+
+li
+{
+	list-style: none;
+}
+
+.logo
+{
+	width: 30%;
+}
+
+#contenedorindex
+{
+	border-bottom: solid white 2px;
+	padding: 0 0 2em 0;
+}
+
+#tortugasola ul li
+{
+	text-align: center;
+	margin: 1em 0;
+
+}
+
+#tortugasola img
+{
+	width: 50%;
+	margin:0 auto;
+}
+
+.imagentortu
+{
+
+	width: 100%;
+}
+
+.imagentortu img
+{
+	float: left;
+	width: 30%;
+}

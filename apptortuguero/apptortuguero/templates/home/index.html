@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+<!-- Conexion -->
+    {% if tortugas %}
+        {% for p in tortugas %}
+
+
+        		<div class="imagentortu">
+        			<a id="perfilportada" href="/tortuga/{{ p.id }}"><img src='{{ MEDIA_URL }}{{ p.imagen }}' width="120px" /></a>
+        		</div>
+
+        {% endfor %}
+    {% else %}
+        <h2>No Hay Tortugas Agregadas</h2>
+    {% endif %}
+{% endblock %}
