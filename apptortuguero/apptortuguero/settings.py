@@ -159,11 +159,7 @@ LOGGING = {
 
 
 #Configuracion para enviar mensajes
-EMAIL_USE_TLS =         True
-EMAIL_HOST =            'smtp.gmail.com'
-EMAIL_HOST_USER =       'qpointlapaz@gmail.com'
-EMAIL_HOST_PASSWORD =   '121088qpoint'
-EMAIL_PORT =            587
+
 
 
 import dj_database_url
